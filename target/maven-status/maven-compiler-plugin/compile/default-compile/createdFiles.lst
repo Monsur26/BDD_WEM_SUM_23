@@ -1,0 +1,4 @@
+common\WebAPI.class
+amazon\AmazonHomepage.class
+amazonstepdefinition\StepDefinition.class
+amazon\WebElements.class

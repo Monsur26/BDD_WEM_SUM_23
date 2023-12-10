@@ -1,0 +1,97 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-12-10T17:35:08.139Z",
+        "line": 3,
+        "name": "Checking SearchBar Functionality",
+        "description": "",
+        "id": "amazon-homepage-webtest;checking-searchbar-functionality",
+        "after": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat common.WebAPI.captureScreenshot(WebAPI.java:234)\r\n\tat amazonstepdefinition.StepDefinition.closeBrowser(StepDefinition.java:27)\r\n",
+              "duration": 2992400,
+              "status": "failed"
+            },
+            "match": {
+              "location": "amazonstepdefinition.StepDefinition.closeBrowser(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25452300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is in amazon Homepage",
+            "match": {
+              "location": "amazonstepdefinition.StepDefinition.User_is_in_amazon_Homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy19.click(Unknown Source)\r\n\tat amazon.AmazonHomepage.clickONSearchBar(AmazonHomepage.java:16)\r\n\tat amazonstepdefinition.StepDefinition.User_clicks_on_the_amazon_search_bar(StepDefinition.java:43)\r\n\tat ✽.User clicks on the amazon search bar(file:///C:/Users/Monsu/BDD_WEM_Sum_23/src/main/java/AmazonFeature/amazon.feature:5)\r\n",
+              "duration": 3980800,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "User clicks on the amazon search bar",
+            "match": {
+              "location": "amazonstepdefinition.StepDefinition.User_clicks_on_the_amazon_search_bar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2992700,
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "User inputs \u0027Text\u0027 in the search field",
+            "match": {
+              "location": "amazonstepdefinition.StepDefinition.User_inputs_Text_in_the_search_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1994100,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "User hits Enter",
+            "match": {
+              "location": "amazonstepdefinition.StepDefinition.User_hits_Enter()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 997400,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "User goes to the search results page",
+            "match": {
+              "location": "amazonstepdefinition.StepDefinition.User_goes_to_the_search_results_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Amazon Homepage WebTest",
+    "description": "",
+    "id": "amazon-homepage-webtest",
+    "keyword": "Feature",
+    "uri": "file:src/main/java/AmazonFeature/amazon.feature",
+    "tags": []
+  }
+]
