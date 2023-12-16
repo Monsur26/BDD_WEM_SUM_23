@@ -4,13 +4,62 @@ formatter.feature({
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "Changing Amazon Webpage Language",
+formatter.scenarioOutline({
+  "name": "Checking Searchbar with multiple options",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@Important"
+      "name": "@One"
+    }
+  ]
+});
+formatter.step({
+  "name": "User is in amazon Homepage",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "User clicks on the amazon search bar",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "User will give \"\u003cMValue\u003e\" value in the search field",
+  "keyword": "And "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "MValue"
+      ]
+    },
+    {
+      "cells": [
+        "Shirt"
+      ]
+    },
+    {
+      "cells": [
+        "Pant"
+      ]
+    },
+    {
+      "cells": [
+        "shoes"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Checking Searchbar with multiple options",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@One"
     }
   ]
 });
@@ -28,31 +77,113 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User hovers over the language dropdown",
+  "name": "User clicks on the amazon search bar",
   "keyword": "When "
 });
 formatter.match({
-  "location": "amazonstepdefinition.StepDefinition.user_hovers_over_the_language_dropdown()"
+  "location": "amazonstepdefinition.StepDefinition.User_clicks_on_the_amazon_search_bar()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "User clicks on the ES radio button",
+  "name": "User will give \"Shirt\" value in the search field",
   "keyword": "And "
 });
 formatter.match({
-  "location": "amazonstepdefinition.StepDefinition.user_clicks_on_the_ES_radio_button()"
+  "location": "amazonstepdefinition.StepDefinition.user_will_give_value_in_the_search_field(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Checking Searchbar with multiple options",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@One"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is in amazon Homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "amazonstepdefinition.StepDefinition.User_is_in_amazon_Homepage()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "the language changes to Spanish",
-  "keyword": "Then "
+  "name": "User clicks on the amazon search bar",
+  "keyword": "When "
 });
 formatter.match({
-  "location": "amazonstepdefinition.StepDefinition.the_language_changes_to_Spanish()"
+  "location": "amazonstepdefinition.StepDefinition.User_clicks_on_the_amazon_search_bar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User will give \"Pant\" value in the search field",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "amazonstepdefinition.StepDefinition.user_will_give_value_in_the_search_field(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Checking Searchbar with multiple options",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@One"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User is in amazon Homepage",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "amazonstepdefinition.StepDefinition.User_is_in_amazon_Homepage()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User clicks on the amazon search bar",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "amazonstepdefinition.StepDefinition.User_clicks_on_the_amazon_search_bar()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "User will give \"shoes\" value in the search field",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "amazonstepdefinition.StepDefinition.user_will_give_value_in_the_search_field(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
